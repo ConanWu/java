@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java-test-e2e.iml" filepath="$PROJECT_DIR$/java-test-e2e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/junit/junit.iml" filepath="$PROJECT_DIR$/junit/junit.iml" />
       <module fileurl="file://$PROJECT_DIR$/vnote/vnote.iml" filepath="$PROJECT_DIR$/vnote/vnote.iml" />
     </modules>
   </component>

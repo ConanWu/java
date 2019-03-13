@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="junit" />
         <module name="vnote" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-test-e2e" target="1.5" />
+      <module name="junit" target="1.5" />
       <module name="qtptest" target="1.5" />
       <module name="vnote" target="1.5" />
     </bytecodeTargetLevel>
