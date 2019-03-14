@@ -10,11 +10,10 @@
         <module name="vnote" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java-test-e2e" target="1.5" />
-      <module name="junit" target="1.5" />
-      <module name="qtptest" target="1.5" />
-      <module name="vnote" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="java-test-e2e" target="8" />
+      <module name="junit" target="8" />
+      <module name="vnote" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
