@@ -4,7 +4,7 @@ logback是由log4j创始人设计的又一个开源日志组件。logback当前�
 
 # 2. maven依赖
 
-```
+```xml
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-api</artifactId>
@@ -35,7 +35,7 @@ logback-classic包含了logback-core，不需要再单独引用了。
 private static final Logger logger = LoggerFactory.getLogger(this.getClass());
 使用：
 
-```
+```java
 @Controller  
 @RequestMapping(value = "")  
 public class IndexController extends BaseController {  
@@ -62,7 +62,7 @@ logback的配置文件都放在/src/main/resource/文件夹下的logback.xml文�
 
 下面的配置中，我们输出特定的ERROR级别的日志：
 
-```
+```xml
 <?xml version="1.0"?>  
 <configuration>  
   
@@ -86,7 +86,7 @@ logback的配置文件都放在/src/main/resource/文件夹下的logback.xml文�
 
 ### 3. 设置输出多个级别的日志
 
-```
+```xml
 <?xml version="1.0"?>  
 <configuration>  
   
@@ -112,7 +112,7 @@ logback的配置文件都放在/src/main/resource/文件夹下的logback.xml文�
 ### 4. 设置文件日志(你懂得)
 additivity="false"很少将这个属性设置为true
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
@@ -175,7 +175,7 @@ additivity="false"很少将这个属性设置为true
 </configuration>
 ```
 
-```
+```java
 public class Test {
     public static void main(String[] args) {
         Logger INFO_LOG = LoggerFactory.getLogger("infoLog");
@@ -189,7 +189,7 @@ public class Test {
 }
 ```
 
-```
+```java
 /**
  * Return a logger named according to the name parameter using the
  * statically bound {@link ILoggerFactory} instance.
@@ -205,7 +205,7 @@ public static Logger getLogger(String name) {
 ```
 
 ### 5. 精确设置每个包下面的日志
-```
+```xml
 <logger name="com.xxx" additivity="false">  
     <level value="info" />  
     <appender-ref ref="file" />  

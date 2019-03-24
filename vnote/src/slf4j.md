@@ -33,7 +33,7 @@ slf4j-simple、logback都是slf4j的具体实现，log4j并不直接实现slf4j�
 ## 3. slf4j应用举例
 
 上面讲了，slf4j的直接/间接实现有slf4j-simple、logback、slf4j-log4j12，我们先定义一个pom.xml，引入相关jar包：
-```
+```xml
 <!-- 原文：五月的仓颉http://www.cnblogs.com/xrq730/p/8619156.html -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -87,7 +87,7 @@ slf4j-simple、logback都是slf4j的具体实现，log4j并不直接实现slf4j�
 </project>
 ```
 写一段简单的Java代码：
-```
+```java
 @Test
 public void testSlf4j() {
     Logger logger = LoggerFactory.getLogger(Object.class);
@@ -102,7 +102,7 @@ public void testSlf4j() {
 
 slf4j的用法就是常年不变的一句"Logger logger = LoggerFactory.getLogger(Object.class);"，可见这里就是通过LoggerFactory去拿slf4j提供的一个Logger接口的具体实现而已，LoggerFactory的getLogger的方法实现为：
 
-```
+```java
 public static Logger getLogger(Class<?> clazz) {
     Logger logger = getLogger(clazz.getName());
     if (DETECT_LOGGER_NAME_MISMATCH) {
@@ -118,7 +118,7 @@ public static Logger getLogger(Class<?> clazz) {
 ```
 
 从第2行开始跟代码，一直跟到LoggerFactory的bind()方法：
-```
+```java
 private final static void bind() {
     try {
         Set<URL> staticLoggerBinderPathSet = null;
@@ -165,7 +165,7 @@ private final static void bind() {
 
 这个地方第7行是一个关键，看一下代码：
 
-```
+```java
 static Set<URL> findPossibleStaticLoggerBinderPathSet() {
     // use Set instead of list in order to deal with bug #138
     // LinkedHashSet appropriate here because it preserves insertion order
@@ -204,7 +204,7 @@ static Set<URL> findPossibleStaticLoggerBinderPathSet() {
 
 这就是因为有三个"org/slf4j/impl/StaticLoggerBinder.class"存在的原因，此时reportMultipleBindingAmbiguity方法控制台输出语句：
 
-```
+```java
 private static void reportMultipleBindingAmbiguity(Set<URL> binderPathSet) {
     if (isAmbiguousStaticLoggerBinderPathSet(binderPathSet)) {
         Util.report("Class path contains multiple SLF4J bindings.");
@@ -218,7 +218,7 @@ private static void reportMultipleBindingAmbiguity(Set<URL> binderPathSet) {
 
 那网友朋友可能会问，同时存在三个"org/slf4j/impl/StaticLoggerBinder.class"怎么办？首先确定的是这不会导致启动报错，其次在这种情况下编译期间，编译器会选择其中一个StaticLoggerBinder.class进行绑定，这个地方sfl4j也在reportActualBinding方法中报告了绑定的是哪个日志框架：
 
-```
+```java
 1 private static void reportActualBinding(Set<URL> binderPathSet) {
 2     // binderPathSet can be null under Android
 3     if (binderPathSet != null && isAmbiguousStaticLoggerBinderPathSet(binderPathSet)) {
@@ -237,7 +237,7 @@ private static void reportMultipleBindingAmbiguity(Set<URL> binderPathSet) {
 
 
 ## 5. 引用一个模块时,需要屏蔽此模块不一致的log实现
-```
+```xml
 'add blow exclusion to the pom file
 <exclusions>
     <exclusion>
@@ -276,7 +276,7 @@ Log4J最常用的日志输出格式为：org.apache.log4j.PatternLayOut，其主
 - %M - java 方法名
 
 ##### 代码示例
-```
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <!--
         Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，你会看到log4j2内部各种详细输出。 
@@ -319,7 +319,7 @@ Log4J最常用的日志输出格式为：org.apache.log4j.PatternLayOut，其主
 ```
 
 test code
-```
+```java
 @Component
 public class LogTest {
     Logger logger = Logger.getLogger("logTest1");
