@@ -33,3 +33,17 @@ linux shell common command
 * rm -rf temp2 ('删除temp2文件及子目录下的所有文件并不用确认')
 * rm -i *.log (`删除任何.log文件， 并一一确认`)
 * rm -- -f* (`删除以-f开头的文件`)
+
+
+## 6. search log hotkey
+* F (refresh log)
+* g (go to first line of the log)
+* G (go to end of the log)
+* n (search string page scroll up)
+* N (search string page scroll down)
+* u (page scroll up)
+* d (page scroll down)
+
+## 7. find log under log folder
+* find ./ -name '*.log' | xargs grep "142107917"
+* grep -l 142107917 *.log
