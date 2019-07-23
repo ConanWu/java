@@ -8,9 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="junit" />
         <module name="vnote" />
+        <module name="cucumber" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="cucumber" target="1.8" />
       <module name="java-test-e2e" target="1.8" />
       <module name="junit" target="1.8" />
       <module name="vnote" target="1.8" />

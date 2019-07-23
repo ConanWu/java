@@ -1,4 +1,4 @@
-package cn.wl.test.tools;
+package cn.wl.test.utils;
 
 import okhttp3.*;
 import org.junit.Test;
