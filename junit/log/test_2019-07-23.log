@@ -1,0 +1,2 @@
+2019-07-23 01:01:22.427 [main] INFO  cn.wl.test.utils.JsonMapper - {"address":"Shanghai","name":"Conan","age":123}
+2019-07-23 01:06:59.465 [main] INFO  cn.wl.test.utils.JsonMapper - name:Conan

@@ -28,7 +28,7 @@ public class ConvertTest {
         // 创建需要转换的对象
         User user = new User(1, "Steven", "@sun123", new Date(), 1000.0);
 
-        String path = "D:\\user.xml";
+        String path = "F:\\temp\\user.xml";
         System.out.println("---将对象转换成File类型的xml Start---");
         XMLUtil.convertToXml(user, path);
         System.out.println("---将对象转换成File类型的xml End---");
