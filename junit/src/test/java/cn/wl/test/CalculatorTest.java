@@ -28,7 +28,7 @@ public class CalculatorTest {
     public void subtract() throws Exception {
         mcalculater.add(10);
         mcalculater.subtract(0);
-        assertEquals(8,mcalculater.getResult());
+        assertEquals(9,mcalculater.getResult());
     }
 
     @Ignore//("multiply()Not yet implemented")

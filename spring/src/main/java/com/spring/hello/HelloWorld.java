@@ -1,5 +1,8 @@
 package com.spring.hello;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HelloWorld {
 
     private String hello;
