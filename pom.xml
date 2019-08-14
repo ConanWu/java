@@ -13,6 +13,7 @@
         <module>junit</module>
         <module>cucumber</module>
         <module>spring</module>
+        <module>log</module>
     </modules>
 
     <!--this is use to always point java version to 1.8 when do compile-->

@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/cucumber/cucumber.iml" filepath="$PROJECT_DIR$/cucumber/cucumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-test-e2e.iml" filepath="$PROJECT_DIR$/java-test-e2e.iml" />
       <module fileurl="file://$PROJECT_DIR$/junit/junit.iml" filepath="$PROJECT_DIR$/junit/junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log/log.iml" filepath="$PROJECT_DIR$/log/log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log/log4j2withslf4j/log4j2withslf4j.iml" filepath="$PROJECT_DIR$/log/log4j2withslf4j/log4j2withslf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log/logback/logback.iml" filepath="$PROJECT_DIR$/log/logback/logback.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/vnote/vnote.iml" filepath="$PROJECT_DIR$/vnote/vnote.iml" />
     </modules>
