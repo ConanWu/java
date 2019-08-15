@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="log4j" />
         <module name="junit" />
         <module name="vnote" />
         <module name="logback" />
@@ -19,6 +20,7 @@
       <module name="java-test-e2e" target="1.8" />
       <module name="junit" target="1.8" />
       <module name="log" target="1.8" />
+      <module name="log4j" target="1.8" />
       <module name="log4j2" target="1.8" />
       <module name="log4j2withslf4j" target="1.8" />
       <module name="logback" target="1.8" />
