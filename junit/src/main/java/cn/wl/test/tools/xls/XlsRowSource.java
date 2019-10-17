@@ -9,6 +9,8 @@ import com.google.common.io.ByteSource;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ooxml.POIXMLDocument;
 import org.apache.poi.poifs.filesystem.FileMagic;
+import org.apache.poi.ss.format.CellFormat;
+import org.apache.poi.ss.format.CellFormatter;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -73,7 +75,12 @@ public class XlsRowSource {
                 Cell cell = input.getCell(i);
                 String key = customHeader.get(i);
                 if (cell != null) {
-                    mapRow.put(key, cell.getStringCellValue());
+                    if (cell.getCellType() == CellType.FORMULA) {
+//                        cell.getCellStyle().getDataFormat()
+                    } else {
+                        evaluator.evaluate(cell);
+                        mapRow.put(key, cell.getStringCellValue());
+                    }
                 }
             }
             return mapRow;

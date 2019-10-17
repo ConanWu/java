@@ -11,4 +11,12 @@ public class CatTest extends Car{
         logger.info(car.calVolume().toString());
 
     }
+
+    @Test
+    public void abstractTest1() {
+        Shape s1 = new Triangle("red", 2, 3, 4);
+        logger.info(s1.getType());
+        logger.info(String.valueOf(s1.calPerimeter()));
+    }
+
 }
