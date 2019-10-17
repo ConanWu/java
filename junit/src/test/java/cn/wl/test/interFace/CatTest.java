@@ -19,4 +19,23 @@ public class CatTest extends Car{
         logger.info(String.valueOf(s1.calPerimeter()));
     }
 
+    @Test
+    public void interfaceTest() {
+        logger.info(String.valueOf(Output.MAX_CACHE_LINE));
+        logger.info(String.valueOf(Output.PROP));
+        logger.info(String.valueOf(Output.PROP_B));
+    }
+
+    @Test
+    public void interfaceInheritTest() {
+        Output o = new Printer();
+        o.getData("hello java world!");
+        o.getData("hello crazy java!");
+        o.out();
+        o.getData("hello world!");
+        o.getData("hello earth!");
+        o.out();
+    }
+
+
 }

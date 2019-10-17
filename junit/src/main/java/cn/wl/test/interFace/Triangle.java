@@ -8,7 +8,6 @@ public class Triangle extends Shape{
     public Triangle(String color, double a, double b, double c) {
         super(color);
         this.setSides(a, b, c);
-
     }
 
     public void setSides(double a, double b, double c) {
