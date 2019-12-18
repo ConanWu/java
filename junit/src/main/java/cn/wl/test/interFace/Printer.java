@@ -25,5 +25,4 @@ public class Printer implements Output, Product {
         return 45;
     }
 
-
 }
