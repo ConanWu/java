@@ -15,6 +15,7 @@
         <module>spring</module>
         <module>log</module>
         <module>algorithm</module>
+        <module>jersey</module>
     </modules>
 
     <!--this is use to always point java version to 1.8 when do compile-->

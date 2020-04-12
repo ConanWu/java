@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/cucumber/cucumber.iml" filepath="$PROJECT_DIR$/cucumber/cucumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-test-e2e.iml" filepath="$PROJECT_DIR$/java-test-e2e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jersey/jersey.iml" filepath="$PROJECT_DIR$/jersey/jersey.iml" />
       <module fileurl="file://$PROJECT_DIR$/junit/junit.iml" filepath="$PROJECT_DIR$/junit/junit.iml" />
       <module fileurl="file://$PROJECT_DIR$/log/log.iml" filepath="$PROJECT_DIR$/log/log.iml" />
       <module fileurl="file://$PROJECT_DIR$/log/log4j2/log4j.iml" filepath="$PROJECT_DIR$/log/log4j2/log4j.iml" />

@@ -12,6 +12,7 @@
         <module name="logback" />
         <module name="spring" />
         <module name="cucumber" />
+        <module name="jersey" />
         <module name="log4j2withslf4j" />
         <module name="algorithm" />
       </profile>
@@ -20,6 +21,7 @@
       <module name="algorithm" target="1.8" />
       <module name="cucumber" target="1.8" />
       <module name="java-test-e2e" target="1.8" />
+      <module name="jersey" target="1.8" />
       <module name="junit" target="1.8" />
       <module name="log" target="1.8" />
       <module name="log4j" target="1.8" />
