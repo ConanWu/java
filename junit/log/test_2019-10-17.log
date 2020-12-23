@@ -1,0 +1,15 @@
+2019-10-17 21:59:08.905 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-17 21:59:08.912 [main] INFO  cn.wl.test.interFace.Vehicle - triangle
+2019-10-17 21:59:08.913 [main] INFO  cn.wl.test.interFace.Vehicle - 9.0
+2019-10-17 21:59:21.262 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-17 21:59:21.266 [main] INFO  cn.wl.test.interFace.Vehicle - triangle
+2019-10-17 21:59:21.267 [main] INFO  cn.wl.test.interFace.Vehicle - 9.0
+2019-10-17 23:15:20.208 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-17 23:15:20.211 [main] INFO  cn.wl.test.interFace.Vehicle - 50
+2019-10-17 23:20:15.986 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-17 23:20:15.990 [main] INFO  cn.wl.test.interFace.Vehicle - 50
+2019-10-17 23:20:15.990 [main] INFO  cn.wl.test.interFace.Vehicle - 5
+2019-10-17 23:20:15.990 [main] INFO  cn.wl.test.interFace.Vehicle - 6
+2019-10-17 23:56:24.070 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-17 23:57:01.421 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-17 23:58:22.976 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!

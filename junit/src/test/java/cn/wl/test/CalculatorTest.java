@@ -26,7 +26,7 @@ public class CalculatorTest {
 
     @Test(expected = ArithmeticException.class)
     public void subtract() throws Exception {
-        mcalculater.add(10);
+        mcalculater.add(calcaaaa());
         mcalculater.subtract(0);
         assertEquals(9,mcalculater.getResult());
     }
@@ -47,6 +47,10 @@ public class CalculatorTest {
     public void squareRoot() throws Exception{
         mcalculater.squareRoot(4);
         assertEquals(2,mcalculater.getResult());
+    }
+
+    private int calcaaaa() {
+        return 1;
     }
 
 }

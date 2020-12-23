@@ -1,0 +1,30 @@
+2020-04-12 23:24:40.990 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:24:40.993 [main] INFO  cn.wl.test.interFace.Vehicle - triangle
+2020-04-12 23:24:40.995 [main] INFO  cn.wl.test.interFace.Vehicle - 9.0
+2020-04-12 23:24:40.996 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:24:40.996 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function with one parameter!
+2020-04-12 23:24:40.996 [main] INFO  cn.wl.test.interFace.Vehicle - Red
+2020-04-12 23:24:40.997 [main] INFO  cn.wl.test.interFace.Vehicle - 8.0
+2020-04-12 23:24:40.997 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:24:40.998 [main] INFO  cn.wl.test.interFace.Vehicle - 50
+2020-04-12 23:24:40.998 [main] INFO  cn.wl.test.interFace.Vehicle - 5
+2020-04-12 23:24:40.998 [main] INFO  cn.wl.test.interFace.Vehicle - 6
+2020-04-12 23:24:40.998 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:24:41.280 [main] INFO  cn.wl.test.objectMapper.PersonTest - hahhahahhah
+2020-04-12 23:24:41.945 [main] INFO  cn.wl.test.utils.JsonMapper - {"address":"Shanghai","name":"Conan","age":123}
+2020-04-12 23:24:41.960 [main] INFO  cn.wl.test.utils.JsonMapper - name:Conan
+2020-04-12 23:25:21.944 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:25:21.946 [main] INFO  cn.wl.test.interFace.Vehicle - triangle
+2020-04-12 23:25:21.947 [main] INFO  cn.wl.test.interFace.Vehicle - 9.0
+2020-04-12 23:25:21.947 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:25:21.947 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function with one parameter!
+2020-04-12 23:25:21.947 [main] INFO  cn.wl.test.interFace.Vehicle - Red
+2020-04-12 23:25:21.947 [main] INFO  cn.wl.test.interFace.Vehicle - 8.0
+2020-04-12 23:25:21.948 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:25:21.948 [main] INFO  cn.wl.test.interFace.Vehicle - 50
+2020-04-12 23:25:21.948 [main] INFO  cn.wl.test.interFace.Vehicle - 5
+2020-04-12 23:25:21.948 [main] INFO  cn.wl.test.interFace.Vehicle - 6
+2020-04-12 23:25:21.948 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2020-04-12 23:25:22.168 [main] INFO  cn.wl.test.objectMapper.PersonTest - hahhahahhah
+2020-04-12 23:25:22.703 [main] INFO  cn.wl.test.utils.JsonMapper - {"address":"Shanghai","name":"Conan","age":123}
+2020-04-12 23:25:22.715 [main] INFO  cn.wl.test.utils.JsonMapper - name:Conan

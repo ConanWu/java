@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaiduSearch {
     public void searchBaidu1() {
-        System.setProperty("webdriver.chrome.driver", "E:\\moving\\GIT\\Junit\\src\\main\\java\\cn\\wl\\test\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\moving\\GIT\\java-test-e2e\\junit\\src\\main\\resources\\driver\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setExperimentalOption("useAutomationExtension", false);
         WebDriver driver = new ChromeDriver(chromeOptions);

@@ -1,0 +1,4 @@
+2019-10-14 23:51:10.089 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function!
+2019-10-14 23:51:10.099 [main] INFO  cn.wl.test.interFace.Vehicle - Vehichle class constructor function with one parameter!
+2019-10-14 23:51:10.099 [main] INFO  cn.wl.test.interFace.Vehicle - Red
+2019-10-14 23:51:10.102 [main] INFO  cn.wl.test.interFace.Vehicle - 8.0

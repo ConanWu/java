@@ -1,0 +1,7 @@
+swagger:
+  print-init: true
+  enabled: true
+  docket:
+    base-package: com.conan.lin.springboot
+server:
+  port: 8888
