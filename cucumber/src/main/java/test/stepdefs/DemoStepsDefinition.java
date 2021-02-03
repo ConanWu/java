@@ -1,5 +1,7 @@
 package test.stepdefs;
 
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ResourceCDN;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -8,6 +10,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 import model.DataTableHelper;
+import org.junit.After;
 import org.junit.Assert;
 
 import java.util.List;
@@ -19,7 +22,10 @@ public class DemoStepsDefinition {
     @Before
     public void init(Scenario scenario){
         this.scenario = scenario;
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("target/extent-report/report.html");
+        htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
     }
+
 
     @Given("^CreateTicket.*")
     public void createticket(DataTable dataTable) {

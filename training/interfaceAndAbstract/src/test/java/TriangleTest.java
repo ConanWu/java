@@ -1,5 +1,6 @@
-import com.sun.org.apache.xpath.internal.operations.String;
 import org.junit.Test;
+
+import java.lang.reflect.Array;
 
 public class TriangleTest {
 
@@ -14,6 +15,11 @@ public class TriangleTest {
     public void stringBufferTest() {
         StringBuffer sb = new StringBuffer();
         sb.append("asdf").append("~");
+        String a = "a-2-3-f-b";
+        String b = a;
+        a="asdfasdf";
+
+
         System.out.println("asdf");
     }
 }
